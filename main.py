@@ -5,7 +5,6 @@ BG_COLOR = (255,255,255)
 FPS = 60
 
 WINDOW = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("Test Game")
 
 def draw_window():
     WINDOW.fill(BG_COLOR)
@@ -23,6 +22,7 @@ def main():
                 run = False
 
         draw_window()
+        pygame.display.set_caption(f'Current FPS: {str(clock.get_fps())}')
 
     pygame.quit()
 
