@@ -31,10 +31,10 @@ class Agent():
         point_u = Point(head.x, head.y - BLOCK_SIZE)
         point_d = Point(head.x, head.y + BLOCK_SIZE)
 
-        dir_l = self.direction == Direction.LEFT
-        dir_r = self.direction == Direction.RIGHT
-        dir_u = self.direction == Direction.UP
-        dir_d = self.direction == Direction.DOWN
+        dir_l = game.direction == Direction.LEFT
+        dir_r = game.direction == Direction.RIGHT
+        dir_u = game.direction == Direction.UP
+        dir_d = game.direction == Direction.DOWN
 
         state = [
             # Danger straight
