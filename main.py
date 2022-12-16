@@ -103,7 +103,7 @@ class SnakeGameAI:
             point = self.head
 
         # hits boundary
-        if point > self.w - BLOCK_SIZE or point.x < 0 or point.y > self.h - BLOCK_SIZE or point < 0:
+        if point > self.w - BLOCK_SIZE or point.x < 0 or point.y > self.h - BLOCK_SIZE or point.x < 0 or point.y < 0:
             return True
         # hits itself
         if point in self.snake[1:]:
