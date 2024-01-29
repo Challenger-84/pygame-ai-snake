@@ -1,2 +1,2 @@
 # pygame-project
-Pygame Project for me learn python again
+Training a deep learning model to play snake game
